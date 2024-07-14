@@ -1,0 +1,8 @@
+grifonekio is a newer version of my porfolio website done more modern in React
+inspiration: https://brittanychiang.com/
+
+Features
+- menu with options, that will extend line from left to right to that exact section
+- downloading my CS
+- hovering effect on contect, that will give some opacity on everything except item that is currently focused
+- every project should have it's own url

@@ -5,13 +5,13 @@ import ContactMe from "./Contents/ContactMe";
 
 function Content() {
   return (
-    <div className="space-y-10">
+    <div className="space-y-20">
       <About />
-      <div className="hover:text-[rgba(255,255,255,0.5)] space-y-10">
+      <div className="hover:text-[rgba(255,255,255,0.5)] space-y-20">
         <Projects />
         <Experience />
-        <ContactMe />
       </div>
+      <ContactMe />
     </div>
   );
 }

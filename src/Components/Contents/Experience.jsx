@@ -2,7 +2,8 @@ import ExperienceEl from "../../UI/ExperienceEl";
 
 function Experience() {
   return (
-    <div>
+    <div id="experience">
+      <h4 className="text-xl font-semibold uppercase mb-6">Experience</h4>
       <ExperienceEl
         positionName={"IT Support"}
         company={"Hanya Corporation"}

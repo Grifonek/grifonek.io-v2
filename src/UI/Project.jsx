@@ -8,13 +8,15 @@ function Project({ name, description, languages, link }) {
   return (
     // <div className="hover:border-solid hover:border-white hover:border-[1px] hover:rounded-lg p-2">
     <div
-      className={`hover:bg-bg-shadow2 duration-100 rounded p-2 cursor-pointer`}
+      className={`hover:bg-bg-shadow2 duration-100 rounded p-2 cursor-pointer py-4`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <a href={link} target="_blank">
         <h1
-          className={`text-xl font-bold mb-2 ${active ? "text-tertiary" : ""}`}
+          className={`text-xl font-semibold mb-2 ${
+            active ? "text-tertiary" : ""
+          }`}
         >
           {name}
         </h1>
@@ -23,7 +25,7 @@ function Project({ name, description, languages, link }) {
           {languages.map((lang) => (
             <li
               key={Math.random()}
-              className="border-solid border-white rounded-lg px-2 text-cyan-300 font-bold bg-emerald-900"
+              className="border-solid border-white rounded-lg px-2 text-cyan-300 font-medium bg-emerald-900"
             >
               {lang}
             </li>

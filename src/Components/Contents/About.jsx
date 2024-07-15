@@ -1,13 +1,25 @@
 function About() {
   return (
-    <div>
+    <div id="about" className="mt-12 space-y-4 text-lg">
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aspernatur
-        incidunt maiores numquam voluptate ullam nemo autem libero nam? Porro
-        culpa et veritatis nisi, debitis sunt cum blanditiis atque totam fugit
-        sequi vero iure voluptates eius delectus architecto. Ex qui recusandae
-        maxime exercitationem, itaque nam veritatis hic. Minima, explicabo
-        dolore.
+        My journey into programming began during my first semester at university
+        when I became fascinated with creating simple websites using{" "}
+        <span className="font-bold">HTML</span> and{" "}
+        <span className="font-bold">CSS</span>. As I got deeper into it, I
+        realized the limitations of these languages and wondered how large,
+        complex websites were made. This curiosity led me to learn{" "}
+        <span className="font-bold">JavaScript</span>, a language I quickly grew
+        to enjoy. Building increasingly complex projects, I discovered{" "}
+        <span className="font-bold">React</span> and knew that web development
+        was my passion.
+      </p>
+      <p>
+        Today, my primary focus is on developing{" "}
+        <span className="font-bold">my own projects</span>, continuously
+        improving my <span className="font-bold">web development skills</span>,
+        and immersing myself in{" "}
+        <span className="font-bold">constant learning</span>. When I&apos;m not
+        coding, you can find me hiking, fishing, or playing video games.
       </p>
     </div>
   );

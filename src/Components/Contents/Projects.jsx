@@ -2,8 +2,8 @@ import Project from "../../UI/Project";
 
 function Projects() {
   return (
-    <div className="space-y-4">
-      <h4>PROJECTS</h4>
+    <div id="projects" className="space-y-5">
+      <h4 className="text-xl font-semibold uppercase">Projects</h4>
       <Project
         name={"Monster Words Game"}
         description={

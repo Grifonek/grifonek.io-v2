@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import useHover from "../../Hooks/useHover";
+import useHover from "../Hooks/useHover";
 
 function Project({ name, description, languages, link }) {
   // const [active, setActive] = useState(false);

@@ -1,14 +1,6 @@
-import useHover from "../../Hooks/useHover";
-
 function About() {
-  const { active, handleMouseEnter, handleMouseLeave } = useHover();
-
   return (
-    <div
-      className={`${active ? "text-ternary" : ""}`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <div>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aspernatur
         incidunt maiores numquam voluptate ullam nemo autem libero nam? Porro

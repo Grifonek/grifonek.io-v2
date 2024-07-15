@@ -5,11 +5,13 @@ import ContactMe from "./Contents/ContactMe";
 
 function Content() {
   return (
-    <div className="space-y-10 hover:text-[rgba(255,255,255,0.5)] overflow-scroll">
+    <div className="space-y-10">
       <About />
-      <Projects />
-      <Experience />
-      <ContactMe />
+      <div className="hover:text-[rgba(255,255,255,0.5)] space-y-10">
+        <Projects />
+        <Experience />
+        <ContactMe />
+      </div>
     </div>
   );
 }

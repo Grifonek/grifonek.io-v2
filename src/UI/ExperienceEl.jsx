@@ -14,20 +14,22 @@ function ExperienceEl({
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`hover:bg-bg-shadow2 duration-100 rounded p-2 cursor-pointer ${
+      className={`hover:bg-bg-shadow2 duration-100 rounded p-2 ${
         active ? "text-ternary" : ""
       }`}
     >
-      <div className="uppercase flex float-left font-semibold text-sm text-gray-400">
+      <div className="uppercase flex float-left font-semibold text-sm text-slate-400">
         {dateTo ? `${dateFrom} — ${dateTo}` : `${dateFrom} — present`}
       </div>
       <div className="flex flex-col pl-8">
         <h1
-          className={`font-bold text-lg mb-2 ${active ? "text-tertiary" : ""}`}
+          className={`font-bold text-lg mb-2 ${active ? "text-teal-300" : ""}`}
         >
           {positionName} - {company}
         </h1>
-        <p>{description}</p>
+        <p className={`${active ? "text-ternary" : "text-slate-400"}`}>
+          {description}
+        </p>
       </div>
     </div>
   );

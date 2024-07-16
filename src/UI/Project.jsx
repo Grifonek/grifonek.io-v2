@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import useHover from "../Hooks/useHover";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function Project({ name, description, languages, link }) {
   // const [active, setActive] = useState(false);
@@ -14,18 +15,21 @@ function Project({ name, description, languages, link }) {
     >
       <a href={link} target="_blank">
         <h1
-          className={`text-xl font-semibold mb-2 ${
-            active ? "text-tertiary" : ""
+          className={`flex text-xl font-semibold mb-2 items-center gap-2 ${
+            active ? "text-teal-300" : ""
           }`}
         >
           {name}
+          {active ? <FaExternalLinkAlt className="text-sm" /> : null}
         </h1>
-        <h4 className={`${active ? "text-ternary" : ""}`}>{description}</h4>
+        <h4 className={`${active ? "text-ternary" : "text-slate-400"}`}>
+          {description}
+        </h4>
         <ul className="flex gap-2 mt-2">
           {languages.map((lang) => (
             <li
               key={Math.random()}
-              className="border-solid border-white rounded-lg px-2 text-cyan-300 font-medium bg-emerald-900"
+              className="border-solid border-white rounded-lg px-2 text-teal-300 font-medium text-sm bg-teal-400/10 "
             >
               {lang}
             </li>

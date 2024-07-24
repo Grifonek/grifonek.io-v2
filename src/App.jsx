@@ -3,12 +3,20 @@ import Menu from "./Components/Menu";
 import Contacts from "./Components/Contacts";
 import Content from "./Components/Content";
 import { BrowserRouter } from "react-router-dom";
+import Cursor from "./UI/Cursor";
+import { useRef } from "react";
 
 function App() {
+  const ref = useRef(null);
+
   return (
     <BrowserRouter>
-      <div className="min-h-screen flex items-center justify-center bg-bg-main text-white overflow-hidden">
-        <div className="w-full max-w-6xl flex h-[calc(100vh-0.1rem)] space-x-20">
+      <div
+        className="min-h-screen flex items-center justify-center text-white"
+        ref={ref}
+      >
+        <div className="w-full max-w-7xl flex h-[calc(100vh-0.1rem)] space-x-20">
+          <Cursor parentRef={ref} />
           <div className="w-1/2 flex flex-col justify-center space-y-4">
             <Header />
             <Menu />

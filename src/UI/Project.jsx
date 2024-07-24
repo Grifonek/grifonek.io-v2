@@ -9,7 +9,8 @@ function Project({ name, description, languages, link }) {
   return (
     // <div className="hover:border-solid hover:border-white hover:border-[1px] hover:rounded-lg p-2">
     <div
-      className={`hover:bg-bg-shadow2 duration-100 rounded p-2 cursor-pointer py-4`}
+      // className={`hover:bg-bg-shadow2 duration-100 rounded p-2 cursor-pointer py-4`}
+      className={`hover:bg-[#303641] duration-100 rounded p-2 cursor-pointer py-4 hover:shadow-[0 -4px 8px rgba(255, 255, 255, 0.1)]`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -28,7 +29,7 @@ function Project({ name, description, languages, link }) {
         <ul className="flex gap-2 mt-2">
           {languages.map((lang) => (
             <li
-              key={Math.random()}
+              key={lang}
               className="border-solid border-white rounded-lg px-2 text-teal-300 font-medium text-sm bg-teal-400/10 "
             >
               {lang}

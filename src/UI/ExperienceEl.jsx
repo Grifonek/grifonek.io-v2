@@ -14,11 +14,11 @@ function ExperienceEl({
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`hover:bg-bg-shadow2 duration-100 rounded p-2 ${
+      className={`hover:bg-[#303641] hover:shadow-[0 -4px 8px rgba(255, 255, 255, 0.1)] duration-100 rounded p-2 ${
         active ? "text-ternary" : ""
       }`}
     >
-      <div className="uppercase flex float-left font-semibold text-sm text-slate-400">
+      <div className="uppercase flex float-left font-semibold text-xs mt-1 text-slate-400">
         {dateTo ? `${dateFrom} — ${dateTo}` : `${dateFrom} — present`}
       </div>
       <div className="flex flex-col pl-8">

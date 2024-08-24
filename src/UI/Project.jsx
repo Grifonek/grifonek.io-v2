@@ -30,7 +30,7 @@ function Project({ name, description, languages, link }) {
           {languages.map((lang) => (
             <li
               key={lang}
-              className="border-solid border-white rounded-lg px-2 text-teal-300 font-medium text-sm bg-teal-400/10 "
+              className="border-solid border-white rounded-xl px-2 text-teal-300 py-1 text-xs bg-teal-400/10 "
             >
               {lang}
             </li>

@@ -1,72 +1,153 @@
-resources: {
-  en: {
-    translation: {
-        headingMain: "Hello, I'm Max",
-        headingText: "I'm on my path to becoming a full-stack web developer, currently exploring and creating projects to build my skills",
-        menu: ["about", "projects", "experience", "contact me"],
-        about1: "My journey into programming began during my first semester at university when I became fascinated with creating simple websites using HTML and CSS. As I got deeper into it, I realized the limitations of these languages and wondered how large, complex websites were made. This curiosity led me to learn JavaScript, a language I quickly grew to enjoy. Building increasingly complex projects, I discovered React and knew that web development was my passion.",
-        about2: "Today, my primary focus is on developing my own projects, continuously improving my web development skills, and immersing myself in constant learning. When I'm not coding, you can find me hiking, fishing, or playing video games.",
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+i18n.use(initReactI18next).init({
+  resources: {
+    en: {
+      translation: {
+        headingMain: "Hello, I'm Max!",
+        headingText: {
+          first: "I'm on my path to becoming a",
+          second: "full-stack web developer",
+          third: "currently exploring and creating projects to build my skills",
+        },
+        menu: {
+          first: "about",
+          second: "projects",
+          third: "experience",
+          fourth: "contact me",
+        },
+        about1: {
+          first:
+            "My journey into programming began during my first semester at university when I became fascinated with creating simple websites using",
+          second: "HTML",
+          third: "and",
+          fourth: "CSS",
+          fifth:
+            "As I got deeper into it, I realized the limitations of these languages and wondered how large, complex websites were made. This curiosity led me to learn",
+          sixth: "JavaScript",
+          seventh:
+            "a language I quickly grew to enjoy. Building increasingly complex projects, I discovered",
+          eighth: "React",
+          ninth: "and knew that web development was my passion",
+        },
+        about2: {
+          first: "Today, my primary focus is on developing",
+          second: "my own projects",
+          third: "continuously improving my",
+          fourth: "web development skills",
+          fifth: "and immersing myself in",
+          sixth: "constant learning",
+          seventh:
+            "When I'm not coding, you can find me hiking, fishing, or playing video games",
+        },
+        mainToolsHeading: "main tools I use",
         headingProject: "projects",
-        monterWordsGame: {
-            name: "Monster Words Game",
-            desc: "Small website game to burn out your fingers with difficulty levels."
+        monsterWordsGame: {
+          name: "Monster Words Game",
+          desc: "Small website game to burn out your fingers with difficulty levels.",
         },
         randomFilm: {
-            name: "Random Film",
-            desc: "Website based on film database API generating random films based on your preference."
+          name: "Random Film",
+          desc: "Website based on film database API generating random films based on your preference.",
         },
         ultimateBarberClub: {
-            name: "Ultimate Barber Club",
-            desc: "Barber shop website with calendar and ordering system."
+          name: "Ultimate Barber Club",
+          desc: "Barber shop website with calendar and ordering system.",
         },
         burgerLovers: {
-            name: "Burger Lovers",
-            desc: "Burger restaurant website with menu, cart and ordering system."
+          name: "Burger Lovers",
+          desc: "Burger restaurant website with menu, cart and ordering system.",
         },
         headingExperience: "experience",
         itSupport: {
-            name: "IT Support",
-            company: "Hanya Corporation",
-            desc: "Monitoring and maintaining the company computer systems, installing and configuring hardware and software, and solving technical problems"
+          name: "IT Support",
+          company: "Hanya Corporation",
+          desc: "Monitoring and maintaining the company computer systems, installing and configuring hardware and software, and solving technical problems",
+          dateFrom: "feb 2024",
+          now: "present",
         },
         resume: "My Resume",
         headingContactMe: "ready to build something amazing?",
-        contactMeBtn: "Let's get to know each other!"
-    }
-  },
-  cz: {
-    translation: {
-        headingMain: "Ahoj, já jsem Max",
-        headingText: "Jsem na cestě stát se full-stack webovým vývojářem, v současné době zkoumám a vytvářím projekty, abych si rozšířil své dovednosti",
-        menu: ["o mně", "projekty", "zkušenosti", "kontaktujte mě"],
-        about1: "Moje cesta k programování začala během prvního semestru na univerzitě, kdy mě zaujalo vytváření jednoduchých webových stránek pomocí HTML a CSS. Když jsem se do toho dostal hlouběji, uvědomil jsem si omezení těchto jazyků a zajímalo mě, jak se vytvářejí velké a složité webové stránky. Tato zvědavost mě přivedla k tomu, že jsem se začal učit jazyk JavaScript, který jsem si rychle oblíbil. Při vytváření stále složitějších projektů jsem objevil React a věděl jsem, že vývoj webových stránek je mou vášní.",
-        about2: "Dnes se soustředím především na vývoj vlastních projektů, neustálé zlepšování svých dovedností v oblasti vývoje webových aplikací a neustálé vzdělávání. Když zrovna nekóduji, můžete mě najít na túře, při rybaření nebo hraní videoher.",
+        contactMeBtn: "Let's get to know each other!",
+      },
+    },
+    cz: {
+      translation: {
+        headingMain: "Ahoj, já jsem Max!",
+        headingText: {
+          first: "Jsem na cestě stát se",
+          second: "full-stack webovým vývojářem",
+          third:
+            "v současné době zkoumám a vytvářím projekty, abych si rozšířil své dovednosti",
+        },
+        menu: {
+          first: "o mně",
+          second: "projekty",
+          third: "zkušenosti",
+          fourth: "kontaktujte mě",
+        },
+        about1: {
+          first:
+            "Moje cesta k programování začala během prvního semestru na univerzitě, kdy mě zaujalo vytváření jednoduchých webových stránek pomocí",
+          second: "HTML",
+          third: "a",
+          fourth: "CSS",
+          fifth:
+            "Když jsem se do toho dostal hlouběji, uvědomil jsem si omezení těchto jazyků a zajímalo mě, jak se vytvářejí velké a složité webové stránky. Tato zvědavost mě přivedla k tomu, že jsem se začal učit jazyk",
+          sixth: "JavaScript",
+          seventh:
+            "který jsem si rychle oblíbil. Při vytváření stále složitějších projektů jsem objevil",
+          eighth: "React",
+          ninth: "a věděl jsem, že vývoj webových stránek je mou vášní",
+        },
+        about2: {
+          first: "Dnes se soustředím především na vývoj",
+          second: "vlastních projektů",
+          third: "neustálé zlepšování svých dovedností v oblasti",
+          fourth: "vývoje webových aplikací",
+          fifth: "a",
+          sixth: "neustálé vzdělávání",
+          seventh:
+            "Když zrovna nekóduji, můžete mě najít na túře, při rybaření nebo hraní videoher",
+        },
+        mainToolsHeading: "hlavní nástroje, které používám",
         headingProject: "projekty",
-        monterWordsGame: {
-            name: "Monster Words Game",
-            desc: "Malá webová hra na vypálení prstů s úrovněmi obtížnosti."
+        monsterWordsGame: {
+          name: "Monster Words Game",
+          desc: "Malá webová hra na vypálení prstů s úrovněmi obtížnosti.",
         },
         randomFilm: {
-            name: "Random Film",
-            desc: "Webové stránky založené na databázi filmů API generující náhodné filmy na základě vašich preferencí."
+          name: "Random Film",
+          desc: "Webové stránky založené na API databáze filmů generující náhodné filmy na základě vašich preferencí.",
         },
         ultimateBarberClub: {
-            name: "Ultimate Barber Club",
-            desc: "Webové stránky holičství s kalendářem a objednávkovým systémem."
+          name: "Ultimate Barber Club",
+          desc: "Webové stránky holičství s kalendářem a objednávkovým systémem.",
         },
         burgerLovers: {
-            name: "Burger Lovers",
-            desc: "Webové stránky hamburgerové restaurace s menu, košíkem a objednávkovým systémem."
+          name: "Burger Lovers",
+          desc: "Webové stránky hamburgerové restaurace s menu, košíkem a objednávkovým systémem.",
         },
         headingExperience: "zkušenosti",
         itSupport: {
-            name: "IT Support",
-            company: "Hanya Corporation",
-            desc: "Sledování a údržba počítačových systémů společnosti, instalace a konfigurace hardwaru a softwaru a řešení technických problémů"
+          name: "IT Support",
+          company: "Hanya Corporation",
+          desc: "Sledování a údržba počítačových systémů společnosti, instalace a konfigurace hardwaru a softwaru a řešení technických problémů",
+          dateFrom: "únor 2024",
+          now: "dosud",
         },
         resume: "Můj životopis",
         headingContactMe: "připraveni vytvořit něco úžasného?",
-        contactMeBtn: "Poznejme se navzájem!"
-    }
-  }
-}
+        contactMeBtn: "Poznejme se navzájem!",
+      },
+    },
+  },
+  fallbackLng: "en",
+
+  interpolation: {
+    escapeValue: false,
+  },
+});
+
+export default i18n;

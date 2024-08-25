@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import useHover from "../Hooks/useHover";
+import { useTranslation } from "react-i18next";
 
 function ExperienceEl({
   dateFrom,
@@ -9,6 +10,7 @@ function ExperienceEl({
   description,
 }) {
   const { active, handleMouseEnter, handleMouseLeave } = useHover();
+  const { t } = useTranslation();
 
   return (
     <div
@@ -19,7 +21,9 @@ function ExperienceEl({
       }`}
     >
       <div className="uppercase flex float-left font-semibold text-xs mt-1 text-slate-400">
-        {dateTo ? `${dateFrom} — ${dateTo}` : `${dateFrom} — present`}
+        {dateTo
+          ? `${dateFrom} — ${dateTo}`
+          : `${dateFrom} — ${t("itSupport.now")}`}
       </div>
       <div className="flex flex-col pl-8">
         <h1
@@ -37,7 +41,7 @@ function ExperienceEl({
 
 ExperienceEl.propTypes = {
   dateFrom: PropTypes.string.isRequired,
-  dateTo: PropTypes.string.isRequired,
+  dateTo: PropTypes.string,
   positionName: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

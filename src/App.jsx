@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useRef } from "react";
+import "./i18n";
+import LanguageSwitcher from "./UI/LanguageSwitcher";
 
 import Header from "./Components/Header";
 import Menu from "./Components/Menu";
@@ -16,18 +18,17 @@ function App() {
         className="min-h-screen flex items-center justify-center text-white"
         ref={ref}
       >
-        <div className="w-full max-w-7xl flex h-[calc(100vh-0.1rem)] space-x-20">
+        <div className="w-full xl:max-w-7xl xl:flex h-[calc(100vh-0.1rem)] xl:space-x-20 overflow-x-hidden">
           <Cursor parentRef={ref} />
-          <div className="w-1/2 flex flex-col justify-center space-y-4">
+          <div className="xl:w-1/2 flex flex-col items-center text-center xl:items-start xl:text-left xl:justify-center space-y-4 max-lg:mt-6">
             <Header />
             <Menu />
             <Contacts />
+            <LanguageSwitcher />
           </div>
-          <div className="w-1/2 flex flex-col overflow-y-scroll no-scrollbar">
+          <div className="xl:w-1/2 flex flex-col h-full xl:overflow-y-scroll no-scrollbar">
             <Routes>
-              {/* <Content /> */}
               <Route path="/" element={<Content />} />
-              {/* <Route path="/project/:name" component={ProjectDetail} /> */}
             </Routes>
           </div>
         </div>

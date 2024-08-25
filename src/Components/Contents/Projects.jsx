@@ -1,36 +1,35 @@
+import { useTranslation } from "react-i18next";
 import Project from "../../UI/Project";
 
 function Projects() {
+  const { t } = useTranslation();
+
   return (
     <div id="projects" className="space-y-5">
-      <h4 className="text-xl font-semibold uppercase">Projects</h4>
+      <h4 className="text-xl font-semibold uppercase text-center xl:items-start xl:text-left">
+        {t("headingProject")}
+      </h4>
       <Project
-        name={"Monster Words Game"}
-        description={
-          "Small website game to burn out your fingers with difficulty levels."
-        }
+        name={t("monsterWordsGame.name")}
+        description={t("monsterWordsGame.desc")}
         languages={["HTML", "CSS", "JavaScript"]}
         link={"https://monsterwordsgame.netlify.app/"}
       />
       <Project
-        name={"Random Film"}
-        description={
-          "Website based on film database API generating random films based on your preference."
-        }
+        name={t("randomFilm.name")}
+        description={t("randomFilm.desc")}
         languages={["HTML", "CSS", "JavaScript"]}
         link={"https://randomfilm.netlify.app/"}
       />
       <Project
-        name={"Ultimate Barber Club"}
-        description={"Barber shop website with calendar and ordering system."}
+        name={t("ultimateBarberClub.name")}
+        description={t("ultimateBarberClub.desc")}
         languages={["HTML", "CSS", "JavaScript"]}
         link={"https://ultimatebarberclub.netlify.app/"}
       />
       <Project
-        name={"Burger Lovers"}
-        description={
-          "Burger restaurant website with menu, cart and ordering system."
-        }
+        name={t("burgerLovers.name")}
+        description={t("burgerLovers.desc")}
         languages={["HTML", "CSS", "JavaScript"]}
         link={"https://burger-lovers.netlify.app/"}
       />

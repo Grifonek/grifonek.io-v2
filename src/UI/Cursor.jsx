@@ -22,7 +22,7 @@ function Cursor({ parentRef }) {
 
   return (
     <div
-      className="light-effect absolute"
+      className="light-effect max-xl:hidden absolute"
       style={{
         top: "calc(var(--y, 0) * 1px)",
         left: "calc(var(--x, 0) * 1px)",

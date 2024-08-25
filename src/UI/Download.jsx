@@ -1,9 +1,11 @@
 import { GoDownload } from "react-icons/go";
 import useHover from "../Hooks/useHover";
 import CV from "../../CV/Max-Demel.pdf";
+import { useTranslation } from "react-i18next";
 
 function Download() {
   const { active, handleMouseEnter, handleMouseLeave } = useHover();
+  const { t } = useTranslation();
 
   return (
     <a
@@ -15,7 +17,7 @@ function Download() {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      My Resume
+      {t("resume")}
       <GoDownload />
     </a>
   );

@@ -3,13 +3,10 @@ import useHover from "../Hooks/useHover";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 function Project({ name, description, languages, link }) {
-  // const [active, setActive] = useState(false);
   const { active, handleMouseEnter, handleMouseLeave } = useHover();
 
   return (
-    // <div className="hover:border-solid hover:border-white hover:border-[1px] hover:rounded-lg p-2">
     <div
-      // className={`hover:bg-bg-shadow2 duration-100 rounded p-2 cursor-pointer py-4`}
       className={`hover:bg-[#303641] duration-100 rounded p-2 cursor-pointer py-4 hover:shadow-[0 -4px 8px rgba(255, 255, 255, 0.1)]`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

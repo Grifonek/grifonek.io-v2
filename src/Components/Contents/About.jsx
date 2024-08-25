@@ -1,30 +1,52 @@
+import { useTranslation } from "react-i18next";
+
 function About() {
+  const { t } = useTranslation();
+
   return (
-    <div id="about" className="mt-12 space-y-4 text-lg text-slate-400">
+    <div
+      id="about"
+      className="mt-12 space-y-4 text-lg text-slate-400 px-2 xl:px-0 items-center text-center xl:items-start xl:text-left xl:justify-center"
+    >
       <p>
-        My journey into programming began during my first semester at university
-        when I became fascinated with creating simple websites using{" "}
-        <span className="font-semibold text-slate-200">HTML</span> and{" "}
-        <span className="font-semibold text-slate-200">CSS</span>. As I got
-        deeper into it, I realized the limitations of these languages and
-        wondered how large, complex websites were made. This curiosity led me to
-        learn <span className="font-semibold text-slate-200">JavaScript</span>,
-        a language I quickly grew to enjoy. Building increasingly complex
-        projects, I discovered{" "}
-        <span className="font-semibold text-slate-200">React</span> and knew
-        that web development was my passion.
+        {t("about1.first")}{" "}
+        <span className="font-semibold text-slate-200">
+          {" "}
+          {t("about1.second")}
+        </span>{" "}
+        {t("about1.third")}{" "}
+        <span className="font-semibold text-slate-200">
+          {" "}
+          {t("about1.fourth")}
+        </span>
+        . {t("about1.fifth")}
+        <span className="font-semibold text-slate-200">
+          {" "}
+          {t("about1.sixth")}
+        </span>
+        , {t("about1.seventh")}{" "}
+        <span className="font-semibold text-slate-200">
+          {" "}
+          {t("about1.eighth")}
+        </span>{" "}
+        {t("about1.ninth")}.
       </p>
       <p>
-        Today, my primary focus is on developing{" "}
-        <span className="font-semibold text-slate-200">my own projects</span>,
-        continuously improving my{" "}
+        {t("about2.first")}{" "}
         <span className="font-semibold text-slate-200">
-          web development skills
+          {" "}
+          {t("about2.second")}
         </span>
-        , and immersing myself in{" "}
-        <span className="font-semibold text-slate-200">constant learning</span>.
-        When I&apos;m not coding, you can find me hiking, fishing, or playing
-        video games.
+        , {t("about2.third")}{" "}
+        <span className="font-semibold text-slate-200">
+          {t("about2.fourth")}
+        </span>
+        , {t("about2.fifth")}{" "}
+        <span className="font-semibold text-slate-200">
+          {" "}
+          {t("about2.sixth")}
+        </span>
+        . {t("about2.seventh")}.
       </p>
     </div>
   );

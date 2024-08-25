@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 function Menu() {
+  const { t } = useTranslation();
+
   const about = useRef(null);
   const projects = useRef(null);
   const experience = useRef(null);
@@ -21,7 +24,7 @@ function Menu() {
   return (
     <div>
       <ul className="space-y-3 py-6 font-medium">
-        <li className="transition-all duration-100 ease-in-out hover:font-extrabold cursor-pointer w-fit">
+        <li className="transition-all duration-100 ease-in-out hover:font-extrabold cursor-pointer w-fit uppercase">
           <a
             onClick={() => {
               about.current.scrollIntoView({
@@ -30,10 +33,10 @@ function Menu() {
               });
             }}
           >
-            ABOUT
+            {t("menu.first")}
           </a>
         </li>
-        <li className="transition-all duration-100 ease-in-out hover:font-extrabold cursor-pointer w-fit">
+        <li className="transition-all duration-100 ease-in-out hover:font-extrabold cursor-pointer w-fit uppercase">
           <a
             onClick={() => {
               projects.current.scrollIntoView({
@@ -42,10 +45,10 @@ function Menu() {
               });
             }}
           >
-            PROJECTS
+            {t("menu.second")}
           </a>
         </li>
-        <li className="transition-all duration-100 ease-in-out hover:font-extrabold cursor-pointer w-fit">
+        <li className="transition-all duration-100 ease-in-out hover:font-extrabold cursor-pointer w-fit uppercase">
           <a
             onClick={() => {
               experience.current.scrollIntoView({
@@ -53,10 +56,10 @@ function Menu() {
               });
             }}
           >
-            EXPERIENCE
+            {t("menu.third")}
           </a>
         </li>
-        <li className="transition-all duration-100 ease-in-out hover:font-extrabold cursor-pointer w-fit">
+        <li className="transition-all duration-100 ease-in-out hover:font-extrabold cursor-pointer w-fit uppercase">
           <a
             onClick={() => {
               contact.current.scrollIntoView({
@@ -64,7 +67,7 @@ function Menu() {
               });
             }}
           >
-            CONTACT ME
+            {t("menu.fourth")}
           </a>
         </li>
       </ul>

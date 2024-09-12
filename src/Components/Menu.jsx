@@ -23,7 +23,7 @@ function Menu() {
 
   return (
     <div>
-      <ul className="space-y-3 py-6 font-medium">
+      <ul className="space-y-3 py-6 font-medium flex flex-col max-xl:items-center">
         <li className="transition-all duration-100 ease-in-out hover:font-extrabold cursor-pointer w-fit uppercase">
           <a
             onClick={() => {

@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import Download from "../../UI/Download";
 import ExperienceEl from "../../UI/ExperienceEl";
 
 function Experience() {
@@ -17,9 +16,9 @@ function Experience() {
           description={t("itSupport.desc")}
           dateFrom={t("itSupport.dateFrom")}
         />
-        <div className="max-md:flex max-md:justify-center max-md:mt-6">
+        {/* <div className="max-md:flex max-md:justify-center max-md:mt-6">
           <Download />
-        </div>
+        </div> */}
       </div>
     </>
   );

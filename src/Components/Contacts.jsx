@@ -3,8 +3,8 @@ import {
   AiOutlineInstagram,
   AiOutlineMail,
 } from "react-icons/ai";
-import PopupWindow from "../UI/PopupWindow";
 import LanguageSwitcher from "../UI/LanguageSwitcher";
+import PopupWindow from "../UI/PopupWindow";
 
 function Contacts() {
   return (

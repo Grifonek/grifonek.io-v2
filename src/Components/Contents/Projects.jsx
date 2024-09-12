@@ -10,6 +10,12 @@ function Projects() {
         {t("headingProject")}
       </h4>
       <Project
+        name={t("learningHelper.name")}
+        description={t("learningHelper.desc")}
+        languages={["React", "TypeScript", "CSS"]}
+        link={"https://my-learning-helper.netlify.app/"}
+      />
+      <Project
         name={t("monsterWordsGame.name")}
         description={t("monsterWordsGame.desc")}
         languages={["HTML", "CSS", "JavaScript"]}
@@ -33,6 +39,7 @@ function Projects() {
         languages={["HTML", "CSS", "JavaScript"]}
         link={"https://burger-lovers.netlify.app/"}
       />
+      <p className="text-sm">* {t("projectInc")}</p>
     </div>
   );
 }

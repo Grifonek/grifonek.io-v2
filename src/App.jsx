@@ -1,12 +1,11 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useRef } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./i18n";
-// import LanguageSwitcher from "./UI/LanguageSwitcher";
 
-import Header from "./Components/Header";
-import Menu from "./Components/Menu";
 import Contacts from "./Components/Contacts";
 import Content from "./Components/Content";
+import Header from "./Components/Header";
+import Menu from "./Components/Menu";
 import Cursor from "./UI/Cursor";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
             <Header />
             <Menu />
             <Contacts />
-            {/* <LanguageSwitcher /> */}
           </div>
           <div className="xl:w-1/2 flex flex-col h-full xl:overflow-y-scroll no-scrollbar">
             <Routes>

@@ -43,9 +43,15 @@ i18n.use(initReactI18next).init({
         },
         mainToolsHeading: "main tools I use",
         headingProject: "projects",
+        projectInc:
+          "It's nice to include the oldest projects here to show the imperfect beginnings.",
+        learningHelper: {
+          name: "My Learning Helper",
+          desc: "A website that boosts productivity with an hourly timer reminding you to take breaks. It also lets you create and manage daily to-do lists, helping you stay organized and focused.",
+        },
         monsterWordsGame: {
           name: "Monster Words Game",
-          desc: "Small website game to burn out your fingers with difficulty levels.",
+          desc: "An interactive typing game where you defeat monsters by typing their names. Clear all monsters to advance to the next level, and complete all levels to win. But beware—if a monster crosses the line, the game is over!",
         },
         randomFilm: {
           name: "Random Film",
@@ -113,9 +119,15 @@ i18n.use(initReactI18next).init({
         },
         mainToolsHeading: "hlavní nástroje, které používám",
         headingProject: "projekty",
+        projectInc:
+          "Je hezké sem zahrnout i ty nejstarší projekty, které ukazují nedokonalé začátky.",
+        learningHelper: {
+          name: "My Learning Helper",
+          desc: "Webová stránka, která zvyšuje produktivitu pomocí hodinového časovače připomínajícího přestávky. Také vám umožňuje vytvářet a spravovat denní seznam úkolů, což vám pomůže zůstat organizovaní a soustředění.",
+        },
         monsterWordsGame: {
           name: "Monster Words Game",
-          desc: "Malá webová hra na vypálení prstů s úrovněmi obtížnosti.",
+          desc: "Interaktivní hra na psaní, kde porážíte monstra tím, že píšete jejich jména. Zlikvidujte všechna monstra a postoupíte do další úrovně, a po dokončení všech úrovní vyhráváte. Ale pozor — pokud monstrum překročí čáru, hra končí!",
         },
         randomFilm: {
           name: "Random Film",

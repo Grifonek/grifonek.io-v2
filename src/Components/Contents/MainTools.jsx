@@ -1,9 +1,9 @@
-import { FaHtml5 } from "react-icons/fa";
-import Tool from "../../UI/Tool";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
+import { FaHtml5 } from "react-icons/fa";
+import { FaReact } from "react-icons/fa6";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import Tool from "../../UI/Tool";
 
 function MainTools() {
   const { t } = useTranslation();
@@ -18,27 +18,27 @@ function MainTools() {
         <Tool
           name={"HTML"}
           img={<FaHtml5 className="size-24" />}
-          color={"text-orange-500"}
+          color={"text-html"}
         />
         <Tool
           name={"TailwindCSS"}
           img={<RiTailwindCssFill className="size-24" />}
-          color={"text-cyan-500"}
+          color={"text-tailwind"}
         />
         <Tool
-          name={"JavaScript"}
-          img={<IoLogoJavascript className="size-24" />}
-          color={"text-yellow-400"}
+          name={"TypeScript"}
+          img={<BiLogoTypescript className="size-28" />}
+          color={"text-typescript"}
         />
         <Tool
           name={"React"}
           img={<FaReact className="size-24" />}
-          color={"text-cyan-400"}
+          color={"text-react"}
         />
         <Tool
           name={"Next.js"}
           img={<RiNextjsFill className="size-24" />}
-          color={"text-slate-600"}
+          color={"text-nextjs"}
         />
       </div>
     </div>

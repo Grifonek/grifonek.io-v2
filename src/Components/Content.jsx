@@ -1,8 +1,8 @@
 import About from "./Contents/About";
-import Projects from "./Contents/Projects";
-import Experience from "./Contents/Experience";
 import ContactMe from "./Contents/ContactMe";
+import Experience from "./Contents/Experience";
 import MainTools from "./Contents/MainTools";
+import Projects from "./Contents/Projects";
 
 function Content() {
   return (

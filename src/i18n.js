@@ -45,6 +45,10 @@ i18n.use(initReactI18next).init({
         headingProject: "projects",
         projectInc:
           "It's nice to include the oldest projects here to show the imperfect beginnings.",
+        chemSolver: {
+          name: "ChemSolver",
+          desc: "ChemSolver is a web app that simplifies chemistry with tools for chemical calculations, an interactive periodic table, and a unit converter. Logged-in users can save their work, view calculation history, and join discussions to share tips and advice. Perfect for students, educators, and chemistry enthusiasts.",
+        },
         learningHelper: {
           name: "My Learning Helper",
           desc: "A website that boosts productivity with an hourly timer reminding you to take breaks. It also lets you create and manage daily to-do lists, helping you stay organized and focused.",
@@ -121,6 +125,10 @@ i18n.use(initReactI18next).init({
         headingProject: "projekty",
         projectInc:
           "Je hezké sem zahrnout i ty nejstarší projekty, které ukazují nedokonalé začátky.",
+        chemSolver: {
+          name: "ChemSolver",
+          desc: "ChemSolver je webová aplikace, která zjednodušuje chemii pomocí nástrojů pro chemické výpočty, interaktivní periodické tabulky a převodníku jednotek. Přihlášení uživatelé si mohou ukládat práci, zobrazovat historii výpočtů a zapojit se do diskusí, kde mohou sdílet tipy a rady. Ideální pro studenty, učitele i nadšence do chemie.",
+        },
         learningHelper: {
           name: "My Learning Helper",
           desc: "Webová stránka, která zvyšuje produktivitu pomocí hodinového časovače připomínajícího přestávky. Také vám umožňuje vytvářet a spravovat denní seznam úkolů, což vám pomůže zůstat organizovaní a soustředění.",

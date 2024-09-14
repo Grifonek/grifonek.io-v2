@@ -10,6 +10,12 @@ function Projects() {
         {t("headingProject")}
       </h4>
       <Project
+        name={t("chemSolver.name")}
+        description={t("chemSolver.desc")}
+        languages={["Next.js", "React", "TailwindCSS", "Supabase"]}
+        link={"https://chem-solver.grifonekio.site/"}
+      />
+      <Project
         name={t("learningHelper.name")}
         description={t("learningHelper.desc")}
         languages={["React", "TypeScript", "CSS"]}

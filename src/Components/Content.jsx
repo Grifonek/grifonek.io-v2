@@ -1,6 +1,7 @@
 import About from "./Contents/About";
 import ContactMe from "./Contents/ContactMe";
 import Experience from "./Contents/Experience";
+import Footer from "./Contents/Footer";
 import MainTools from "./Contents/MainTools";
 import Projects from "./Contents/Projects";
 
@@ -14,6 +15,7 @@ function Content() {
         <Experience />
       </div>
       <ContactMe />
+      <Footer />
     </div>
   );
 }

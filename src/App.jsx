@@ -19,7 +19,7 @@ function App() {
       >
         <div className="w-full xl:max-w-7xl flex max-xl:flex-col h-[calc(100vh-0.1rem)] xl:space-x-20 overflow-x-hidden">
           <Cursor parentRef={ref} />
-          <div className="xl:w-1/2 flex flex-col items-center text-center xl:items-start xl:text-left xl:justify-center space-y-4 max-lg:mt-6">
+          <div className="xl:w-1/2 flex flex-col items-center text-center xl:items-start xl:text-left xl:justify-center space-y-4 max-xl:mt-6">
             <Header />
             <Menu />
             <Contacts />

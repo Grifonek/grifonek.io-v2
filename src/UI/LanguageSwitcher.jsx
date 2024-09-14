@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReactCountryFlag from "react-country-flag";
 import { useTranslation } from "react-i18next";
 
 function LanguageSwitcher() {
@@ -19,12 +20,7 @@ function LanguageSwitcher() {
           }}
           className="flex gap-x-1"
         >
-          (
-          <img
-            alt="United States"
-            src="http://purecatamphetamine.github.io/country-flag-icons/3x2/CZ.svg"
-          />
-          )
+          <ReactCountryFlag countryCode="CZ" style={{ fontSize: "2rem" }} />
         </button>
       ) : (
         <button
@@ -34,12 +30,7 @@ function LanguageSwitcher() {
           }}
           className="flex gap-x-1"
         >
-          (
-          <img
-            alt="United States"
-            src="http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"
-          />
-          )
+          <ReactCountryFlag countryCode="GB" style={{ fontSize: "2rem" }} />
         </button>
       )}
     </div>

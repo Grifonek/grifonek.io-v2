@@ -8,7 +8,7 @@ function About() {
       id="about"
       className="mt-12 space-y-4 text-lg text-slate-400 px-2 xl:px-0 items-center text-center xl:items-start xl:text-left xl:justify-center"
     >
-      <p>
+      <h3>
         {t("about1.first")}{" "}
         <span className="font-semibold text-slate-200">
           {" "}
@@ -30,8 +30,8 @@ function About() {
           {t("about1.eighth")}
         </span>{" "}
         {t("about1.ninth")}.
-      </p>
-      <p>
+      </h3>
+      <h3>
         {t("about2.first")}{" "}
         <span className="font-semibold text-slate-200">
           {" "}
@@ -47,7 +47,7 @@ function About() {
           {t("about2.sixth")}
         </span>
         . {t("about2.seventh")}.
-      </p>
+      </h3>
     </div>
   );
 }

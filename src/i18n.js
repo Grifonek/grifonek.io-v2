@@ -55,7 +55,7 @@ i18n.use(initReactI18next).init({
         },
         monsterWordsGame: {
           name: "Monster Words Game",
-          desc: "An interactive typing game where you defeat monsters by typing their names. Clear all monsters to advance to the next level, and complete all levels to win. But beware—if a monster crosses the line, the game is over!",
+          desc: "An interactive typing game where you defeat monsters by typing their names. Clear all monsters to advance to the next level, and complete all levels to win. But beware—if a monster reaches the end, the game is over! All of that with Quake sound effects!",
         },
         randomFilm: {
           name: "Random Film",
@@ -135,7 +135,7 @@ i18n.use(initReactI18next).init({
         },
         monsterWordsGame: {
           name: "Monster Words Game",
-          desc: "Interaktivní hra na psaní, kde porážíte monstra tím, že píšete jejich jména. Zlikvidujte všechna monstra a postoupíte do další úrovně, a po dokončení všech úrovní vyhráváte. Ale pozor — pokud monstrum překročí čáru, hra končí!",
+          desc: "Interaktivní hra na psaní, kde porážíte monstra tím, že píšete jejich jména. Zlikvidováním všech monster postoupíte do další úrovně, a po dokončení všech úrovní vyhráváte hru. Ale pozor — pokud monstrum dojde na konec, hra končí! To vše s Quake zvukovými efekty!",
         },
         randomFilm: {
           name: "Random Film",

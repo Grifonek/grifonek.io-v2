@@ -24,8 +24,9 @@ function Projects() {
       <Project
         name={t("monsterWordsGame.name")}
         description={t("monsterWordsGame.desc")}
-        languages={["HTML", "CSS", "JavaScript"]}
+        languages={["React", "TypeScript", "TailwindCSS"]}
         link={"https://monsterwordsgame.netlify.app/"}
+        previousVersion={"https://monsterwordsgame-prev.netlify.app/"}
       />
       <Project
         name={t("randomFilm.name")}
